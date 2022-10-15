@@ -15,19 +15,19 @@ void accept()
 	scanf("%d",&m);
 
 	printf("\nEnter the allocation matrix\n");
-	for(int i=0; i<n; i++)
+	for(int j=0; j<n; j++)
 	{
-		for(int j=0; j<m; j++)
-			scanf("%d", &A[i][j]);
+		for(int k=0; k<m; k++)
+			scanf("%d", &A[j][k]);
 	}
 
 	printf("\nEnter the maximum matrix\n");
-	for(int i=0; i<n; i++)
+	for(int j=0; j<n; j++)
 	{
-		for(int j=0; j<m; j++)
+		for(int k=0; k<m; k++)
 		{
-			scanf("%d", &M[i][j]);
-			N[i][j] = M[i][j] - A[i][j];
+			scanf("%d", &M[j][k]);
+			N[j][k] = M[j][k] - A[j][k];
 		}
 	}
 
